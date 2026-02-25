@@ -1,0 +1,16 @@
+version: '3.9'
+
+# Simplified compose for local dev — uses SQLite, no Postgres needed.
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:///./sprintsync.db
+      SECRET_KEY: dev-secret-key
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      USE_AI_STUB: ${USE_AI_STUB:-false}
+    volumes:
+      - ./data:/app/backend  # persist SQLite DB
+    restart: unless-stopped
