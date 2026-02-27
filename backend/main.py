@@ -70,10 +70,15 @@ if os.path.isdir(FRONTEND_DIST):
 @app.on_event("startup")
 def startup():
     init_db()
-    # Auto-seed in development
     try:
         from seed import seed
         seed()
     except Exception as exc:
         logger.warning("seed_skipped", reason=str(exc))
+
+    # ── ADD THIS LINE ──────────────────────────────
+    from services.ai import load_custom_model
+    load_custom_model()
+    # ──────────────────────────────────────────────
+
     logger.info("startup", app=settings.APP_NAME)
