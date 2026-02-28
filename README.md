@@ -9,7 +9,7 @@
 
 ## 🎥 Demo Video
 
-[Loom walkthrough — 5 min](https://loom.com/YOUR_LINK_HERE)  
+[Loom walkthrough — 5 min](https://drive.google.com/file/d/1neCTI4XO-xQwtD3tM95Iaf2HQOK6q8Ix/view?usp=drivesdk)  
 Covers: product demo → architecture → code tour → deploy.
 
 ## 🌐 Live App
@@ -35,7 +35,7 @@ Demo credentials:
 │                    │Postgres │ (prod)       │
 │                    └─────────┘              │
 │                                             │
-│  AI: OpenAI gpt-4o-mini  (+ stub fallback) │
+│  AI: OpenAI gpt-4o-mini  (+ stub fallback) or coustom model│
 │  Auth: JWT (python-jose + bcrypt)           │
 │  Logging: structlog JSON → stdout           │
 │  Metrics: /metrics (Prometheus-style JSON)  │
