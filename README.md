@@ -1,12 +1,5 @@
 # SprintSync
 
-> Lean internal tool for engineers: log work, track time, and get AI-powered planning help.  
-> Built as the CodeStratLabs hiring challenge reference implementation.
-
-[![CI](https://github.com/YOUR_USERNAME/sprintsync/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/sprintsync/actions)
-
----
-
 ## 🎥 Demo Video
 
 [Loom walkthrough — 5 min](https://drive.google.com/file/d/1neCTI4XO-xQwtD3tM95Iaf2HQOK6q8Ix/view?usp=drivesdk)  
@@ -14,7 +7,7 @@ Covers: product demo → architecture → code tour → deploy.
 
 ## 🌐 Live App
 
-[https://sprintsync.onrender.com](https://sprintsync.onrender.com)
+[https://sprintsync.onrender.com](http://13.205.1.95:5173/)
 
 Demo credentials:
 - `alice / alice123` (regular user)
@@ -218,10 +211,3 @@ pytest tests/ -v
 
 ---
 
-## Time Log
-
-See `estimates.csv` for task-by-task estimates vs actuals.
-
----
-
-*Built with FastAPI · React · SQLAlchemy · structlog · OpenAI · Docker*
